@@ -7,6 +7,7 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
+    padding: 0;
 }
 
 img {
@@ -19,23 +20,28 @@ a {
 
 a.logo {
     color: #f9faf8;
-    font-size: 24px;    
+    font-size: 24px;
 }
 
 .container {
     max-width: 80%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;    
 }
 
 .row {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-header {
+header,
+footer {
     background-color: #1f2937;
+}
+
+nav {
+    margin-left: auto;
 }
 
 nav > ul {
@@ -54,14 +60,12 @@ ul > li > a {
 button {
     background-color: #3882f6;
     color: #f9faf8;
-    cursor: pointer; 
-    border-radius: 3px;   
+    cursor: pointer;
+    border-radius: 3px;
     border-style: none;
     padding: 5px;
     width: 8em;
 }
-
-
 
 nav a:hover {
     opacity: 0.9;
@@ -71,10 +75,10 @@ nav a:hover {
 .hero-body {
     align-items: center;
     gap: 1em;
-    padding: 1em 0;
+    padding: 1em 0 3em 0;
 }
 
-.hero-body>* {
+.hero-body > * {
     flex-basis: 100%;
 }
 
@@ -98,3 +102,95 @@ nav a:hover {
     font-weight: 200;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.info-header {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+}
+
+.cards {
+    gap: 2em;
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    border: 3px solid rgb(20, 228, 235);
+}
+
+#section2 {
+    background-color: #e5e7eb;
+    padding: 50px;
+}
+
+#section2 p {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1f2937;
+    text-align: justify;
+}
+
+#section3 {
+    background-color: #3882f6;
+    border-radius: 1em;
+    color: #f9faf8;
+}
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10em;
+    padding: 2em 5em;
+}
+
+.col h2,
+.col p {
+    margin: 0;
+    padding: 0;
+}
+.col button {
+    border-color: #f9faf8;
+    border: 2px solid;
+    font-weight: bold;
+}
+
+#section1 {
+    margin: 40px auto 40px auto;
+}
+
+#section2 {
+    margin: 0 auto 40px auto;
+}
+
+#section3 {
+    margin: 0 auto 40px auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+footer h3 {
+    color: #e5e7eb;
+    font-size: 18px;
+    font-weight: 200;
+}
